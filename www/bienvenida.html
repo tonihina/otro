@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/bienvenida.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+<body  class="fondo4">
+
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <div class="mySlides">
+            <h1 class="titulo">Bienvenido!</h1>
+           
+            <p class="hola">Hola, hablanos sobre tí. Completa los siguientes datos, son necesarios para calcular de manera más
+                precisas tus rutinas y consejos alimenticios, todo para brindarte mejor servicio.</p>
+                <br>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        </div>
+        <div class="mySlides">
+            <main role="main" >
+
+                <section class="content-form">
+            
+                    <h2 class="sub-title">DATOS GENERALES</h2>
+            
+                    <form action="bienvenido.html" method="POST" id="registrar-form" >
+                      
+                        <div class="form-group width-12">
+                             <div class="width-12">
+                              <input type="text" placeholder="Nombre *" class="form-control" name="nombre" id="nombre" required/> 
+                             </div> 
+                             <div class="width-12">
+                                <p id="datoPeso" style="color: white;">  Peso:<span id="valor" ></span></p>
+                              <input type="range" class="slider" name="peso" id="peso" min="40" max="200"/> 
+                              
+                             </div>  
+                        </div>
+            
+                        <div class="form-group">
+                             <div class="width-12">
+                                <p id="datoAltura" style="color: white;">  Altura: <span id="salidaAltura" ></span></p>
+                              <input type="range" class="slider" name="altura" id="altura" min="100" max="230"/> 
+                             </div>
+                        </div>
+                            
+                         <div class="form-group width-12">
+                              <h3 class="sub-form">Has hecho ejercicio</h3>
+                              <div class="width-4">
+                                <label for="si"><input type="radio" id="si" name="hasHecho" value="si" checked/>Si</label>
+                              </div>
+                              <div class="width-4">
+                                <label for="no"><input type="radio" id="no" name="hasHecho" value="no" />No</label>
+                              </div>
+                         </div>
+                          
+                         <br>
+                         <div class="form-group width-12">
+                                <input type="submit" value="Continuar" class="form-control btn btn-principal" id="btn-registrar" onclick="plusDivs(1)"/>
+                                 
+                         </div>
+                  
+                    </form>
+            
+                </section>
+            </main>
+        </div>
+        <div class="mySlides">
+            <p class="hola">Gracas, enseguida hemos creado un test para cada ejercicio básico, por favor termina este test para que 
+                sepamos tu condición actual físico, no olvides calentar un poco. 30 segundos de ejercicio, y tú, cuantas
+                repeticiones harás, averigualo...
+            </p>
+        </div>
+        
+
+     </div>
+    <div class="next" style="width:100%">
+        <!-- <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>-->
+        
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" "></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" "></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" "></span>
+    </div>
+    <script src="js/bienvenida.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
